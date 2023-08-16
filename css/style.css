@@ -1,0 +1,174 @@
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: .75rem;
+}
+
+.hero {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+}
+
+.icon-square {
+  font-size: 2vw;
+  width: 3rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+.hero-title {
+  text-align: left;
+  font-size: 5vw;
+  font-weight: 700;
+  line-height: .95;
+}
+
+.hero-btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+.hero-btn-container button {
+  width: auto; 
+  min-width: 20%; 
+}
+
+.testimonial {
+  margin-top: 8rem;
+}
+
+.row-companies-logo {
+  align-items: center;  
+  justify-content: center; 
+}
+
+.row-companies-logo > div {
+  margin: 0px 50px;
+}
+
+.the-next-web-logo {
+  width: 35%;
+}
+
+html, body {
+  height: 100%;
+}
+
+@media (max-width: 992px) { 
+
+  .hero-title {
+    text-align: left;
+    font-size: 6vw;
+    font-weight: 700;
+    color: black;
+    line-height: .95;
+  }
+
+  #featured-3 h3 {
+    font-size: 3vw !important;  /* or whatever size you want */
+  }
+
+  #featured-3 p {
+      font-size: 2.5vw !important; /* or whatever size you want */
+  }
+
+  .hero-img-row {
+    order: 1;
+    margin-top: 5rem;
+  }
+  .hero-title {
+    text-align: center;
+  }
+  .companies-logo {
+    margin: 15px 0px;
+  }
+
+  .hero-btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-btn-container button {
+    font-size: 3vw;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+  }
+
+}
+
+@media (max-width:768px) {
+
+  #featured-3 h3 {
+    font-size: 4vw !important;  /* or whatever size you want */
+  }
+
+  #featured-3 p {
+      font-size: 3vw !important; /* or whatever size you want */
+  }
+
+  .svg-logo {
+    height: 20px;
+    margin-top: 2px;
+  }
+
+  .hero-btn-container button {
+    font-size: 3.5vw;
+  }
+
+  .hero-title {
+    font-size: 7vw;
+  }
+
+}
+
+@media (max-width: 576px) {
+  #featured-3 h3 {
+    font-size: 6.5vw !important;  /* or whatever size you want */
+  }
+
+  #featured-3 p {
+      font-size: 3.5vw !important; /* or whatever size you want */
+  }
+
+  .hero-btn-container button {
+    font-size: 4vw;
+  }
+
+  .hero-title {
+    font-size: 8vw;
+  }
+
+}
+
+@media (min-width: 1800px) {
+
+  .hero-title {
+    font-size: 4vw;
+    line-height: 1;
+  }
+
+}
